@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./source/style/style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img class="logo" src="./source/img/logo.png" alt="CocaCola"></a>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="toggle" onclick="toggleMenu()"></div>
+    </header>
+    <div class="contenr">
+      <div class="textBox">
+        <h2>Taste the Feeling</h2>
+        <p>
+          In 1886, pharmacist John Pemberton invented this drink as a treatment for morphine addiction, 
+          introduced Coca Cola to a large pharmacy: consisting of water, sugar, caffeine, coca leaf 
+          extracts and cola nut, where the drink was sold at 5 cents per glass. In 1888, Pemberton 
+          died in poverty, and the rights were bought from his widow by entrepreneur Eiza Candler for 
+          &#36 2300, who in 1892 registered this company under the name Coca-Cola Company and in ten 
+          years, together with 50 employees, created the national brand Coca-Cola. In 1899, the first 
+          franchise company was founded to produce this drink. This model, in which the parent company 
+          limited itself to the production of beverage concentrates and their marketing, and third-party 
+          companies bought these concentrates, diluted them with sweetened carbonated water, bottled and 
+          sold them, persisted for most of the 20th century.</p>
+          <a href="#">Learn more</a>
+      </div>
+
+      <div class=imgBox>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./source/img/cocacola1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./source/img/cocacola2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./source/img/cocacola3.png" alt=""></div>
+            <div class="swiper-slide"><img src="./source/img/cocacola4.png" alt=""></div>
+            <div class="swiper-slide"><img src="./source/img/cocacola5.png" alt=""></div>
+            <div class="swiper-slide"><img src="./source/img/cocacola6.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="sci">
+      <li><a href=""><img src="./source/img/facebook.png" alt=""></a></li>
+      <li><a href=""><img src="./source/img/twitter.png" alt=""></a></li>
+      <li><a href=""><img src="./source/img/instagram.png" alt=""></a></li>
+    </ul>
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop: true,
+    });
+
+    function toggleMenu(){
+      const menuToggle = document.querySelector('.toggle');
+      const nav = document.querySelector('.nav')
+      menuToggle.classList.toggle('active')
+      nav.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>

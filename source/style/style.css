@@ -198,11 +198,11 @@ header {
     height: 300px;
   }
 
-  .nav {
+  header .nav {
     display: none;
   }
 
-  .nav.active {
+  header .nav.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -216,7 +216,7 @@ header {
     z-index: 10;
   }
 
-  .nav li a {
+  header .nav li a {
     margin: 10px 0;
     font-size: 1.5em;
     font-weight: 300;

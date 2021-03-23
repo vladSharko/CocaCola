@@ -226,7 +226,7 @@ header {
     position: relative;
     width: 30px;
     height: 30px;
-    background: url(/source/img/menu.png);
+    background: url(../source/img/menu.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
@@ -236,7 +236,7 @@ header {
 
   .toggle.active {
     padding: fixed;
-    background: url(/source/img/close.png);
+    background: url(../source/img/close.png);
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
